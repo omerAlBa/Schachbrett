@@ -1,0 +1,55 @@
+.color1
+{
+	background-color: #8A4B08;
+	width: 100px;
+	height: 100px;
+}
+.blackAwhite
+{
+	background-color: #F5ECCE;
+
+}
+#SchachbrettDV
+{
+	top: 550px;
+	left: 550px;
+}
+#SchachbrettTB
+{
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 100px;
+}
+.seiten
+{
+	width: 50px;
+
+}
+.seiten2
+{
+	width: 50px;
+
+	transform: scaleY(-1);
+}
+.topSB
+{
+	width: 50px;
+	transform: scaleX(-1);
+}
+#colorSwitch
+{
+	text-align: center;
+	width: 75px;
+	height: 50px;
+	border-radius: 20%;
+	margin-left: 1500px;
+	margin-top: -500px;
+	background-color: lightgrey;
+}
+#andereFarbe
+{
+	width: 500px;
+	height: 50px;
+	margin-left: 1100px;
+	margin-top: -600px;
+}
