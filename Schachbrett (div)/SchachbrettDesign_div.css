@@ -1,0 +1,64 @@
+.td1
+{
+	display: table-cell;
+	background-color: grey;
+	width: 100px;
+}
+.td
+{
+	display: table-cell;
+	background-color: pink;
+	width: 100px;
+	height: 100px;
+}
+
+#HGrund
+{
+	text-align: center;
+}
+.aussen
+{
+	display: table-cell;
+	transform: scaley(-1);
+	width: 50px;
+	vertical-align: middle
+}
+.innen
+{
+	display: table-cell;
+	width: 50px;
+	vertical-align: middle
+}
+.untereZeile
+{
+	display: table-cell;
+	width: 100px;
+	text-align: right;
+}
+.obereZeile
+{
+	display: table-cell;
+	width: 100px;
+	text-align: right;
+	transform: scaley(-1);
+	margin-bottom: 5px
+}
+#switch
+{
+	width: 500px;
+	height: 50px;
+	margin-left: 900px;
+	margin-bottom: -2000px;
+}
+#takeAcolor
+{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+#takeAcolor1
+{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+
