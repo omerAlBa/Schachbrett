@@ -1,0 +1,46 @@
+.td1
+{
+	display: table-cell;
+	background-color: grey;
+	width: 100px;
+}
+.td
+{
+	display: table-cell;
+	background-color: pink;
+	width: 100px;
+	height: 100px;
+}
+
+#HGrund
+{
+	text-align: center;
+	margin-height: -70px;
+}
+.aussen
+{
+	display: table-cell;
+	transform: scaley(-1);
+	width: 50px;
+	vertical-align: middle
+}
+.innen
+{
+	display: table-cell;
+	width: 50px;
+	vertical-align: middle
+}
+.untereZeile
+{
+	display: table-cell;
+	width: 100px;
+	text-align: right;
+}
+.obereZeile
+{
+	display: table-cell;
+	width: 100px;
+	text-align: right;
+	transform: scaley(-1);
+	margin-bottom: 5px;
+}
