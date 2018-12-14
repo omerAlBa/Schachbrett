@@ -1,40 +1,35 @@
 <html>
-<head>
-	<link rel="stylesheet" href="SchachbrettDesign_div.css">
-	<script src="https://code.jquery.com/jquery-latest.js"></script>
-</head>
-<body id="HGrund">
+		<head>
+			<link rel="stylesheet" href="SchachbrettDesign_div.css"></link>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		</head>
+			<body id="HGrund">
+				<div class="tabele">
+					<div class="tr">
+						<div class="obereZeile">A</div>	<div class="obereZeile">B</div>	<div class="obereZeile">C</div>	<div class="obereZeile">D</div>	<div class="obereZeile">E</div>	<div class="obereZeile">G</div><div class="obereZeile">H</div></div>
+					<div class="tr">
+						<div class="innen">1</div><div class="td1"></div>  <div class="td"></div> <div class="td1"></div>   <div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div> <div class="aussen">1</div></div>
+					<div class="tr">
+						<div class="innen">2</div>	<div class="td"></div><div class="td1"></div> <div class="td"></div>		<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div><div class="aussen">2</div>
+					<div class="tr">
+						<div class="innen">3</div><div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="aussen">3</div></div>
+					<div class="tr">
+						<div class="innen">4</div><div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div><div class="aussen">4</div></div>
+					<div class="tr">
+						<div class="innen">5</div><div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div><div class="aussen">5</div></div>
+					<div class="tr">
+						<div class="innen">6</div><div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td" id="Feld"></div>	<div class="td1" id="Feld"></div>	<div class="td"></div>	<div class="td1"></div><div class="aussen">6</div></div>
+					<div class="tr">
+						<div class="innen">7</div><div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1" id="Feld"></div>	<div class="td" id="Feld"></div>	<div class="td1"></div>	<div class="td"></div><div class="aussen">7</div></div>
+					<div class="tr">
+						<div class="innen">8</div><div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div><div class="aussen">8</div><p>
 
-	<div class="tabele">
-		<div class="tr">
-			<div class="obereZeile">A</div>	<div class="obereZeile">B</div>	<div class="obereZeile">C</div>	<div class="obereZeile">D</div>	<div class="obereZeile">E</div>	<div class="obereZeile">F</div>	<div class="obereZeile">G</div><div class="obereZeile">H</div></div><p>
-		<div class="tr">	
-			<div class="innen">1</div><div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div><div class="td"></div>	<div class="aussen">1</div></div>
-		<div class="tr">
-			<div class="innen">2</div><div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div><div class="aussen">2</div></div>
-		<div class="tr">
-			<div class="innen">3</div><div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="aussen">3</div></div>
-		<div class="tr">
-			<div class="innen">4</div><div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div><div class="aussen">4</div></div>
-		<div class="tr">
-			<div class="innen">5</div><div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div><div class="aussen">5</div></div>
-		<div class="tr">
-			<div class="innen">6</div><div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div><div class="aussen">6</div></div>
-		<div class="tr">
-			<div class="innen">7</div><div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div><div class="aussen">7</div></div>
-		<div class="tr">
-			<div class="innen">8</div><div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div>	<div class="td"></div>	<div class="td1"></div><div class="aussen">8</div><p>
-
-			<div class="untereZeile">A</div>	<div class="untereZeile">B</div>	<div class="untereZeile">C</div>	<div class="untereZeile">D</div>	<div class="untereZeile">E</div>	<div class="untereZeile">F</div>	<div class="untereZeile">G</div><div class="untereZeile">H</div>	
-		</div>
-		<button type="button" id="switch">classic</button>
-	<input id="takeAcolor" type="color">2 Farbe
-	<input id="takeAcolor1" type="color">1 Farbe
-	</div>
-	
-
-			
-			<script src="https://code.jquery.com/jquery-latest.js"></script>
-			<script src="Schachbrett_div.js" async></script>
-</body>
+						<div class="untereZeile">A</div>	<div class="untereZeile">B</div>	<div class="untereZeile">C</div>	<div class="untereZeile">D</div>	<div class="untereZeile">E</div>	<div class="untereZeile">F</div>	<div class="untereZeile">G</div><div class="untereZeile">H</div>	
+					</div>
+					<button type="button" id="switch">classic</button>
+				<input id="takeAcolor" type="color">2 Farbe
+				<input id="takeAcolor1" type="color">1 Farbe
+				</div>	
+			</body>
+<script language="javascript" type="text/javascript" src="Schachbrett_div.js"></script>
 </html>

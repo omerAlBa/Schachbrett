@@ -1,64 +1,77 @@
-var Caption="";
-var i=0;
-var finder="";
-var finder1="";
-(function() 
-	{		
-	  document.getElementById("switch").addEventListener("click", function andereFarbe(){
-	  	Caption=document.getElementById("switch").textContent
-	  	console.log(Caption)
-	  	if (Caption=="color")
-	  	{
-	  		document.getElementById("switch").textContent="classic";
+var Caption = "";
+var i = 0;
+var finder = "";
+var finder1 = "";
+
+(function() {		
+	  $("#switch").click("click", function() {
+	  	Caption = $("#switch").text()
+	  	if (Caption == "color") {
+	  		$("#switch").text("classic");
 	  		findHex();
-	  		getYourColor();
-	  		
-	  	}
-	  	else
-	  	{
-	  		document.getElementById("switch").textContent="color";
+
+	  		$(".td1").each(function () {
+				$(this).css("background-color", finder);
+			});
+			$(".td").each(function () {
+				$(this).css("background-color", finder1);
+			});
+										
+	  	} else {
+	  		$("#switch").text("color");
 	  		findHex();
-	  		getYourColor();
-	  		
+
+	  		$(".td1").each(function () {
+				$(this).css("background-color", finder);
+			});
+			$(".td").each(function () {
+				$(this).css("background-color", finder1);
+			});
 	  	}
 	});
 })();
 
-function getYourColor()
-{
+function findHex() {
+	if ($("#switch").text() == "color") {
+	   	finder = "black";
+	  	finder1 = "white";		
+  	} else {
+		finder = takeAcolor.value;
+		finder1 = takeAcolor1.value;
+  }	
+}
+
+
+
+
+
+/*
 	if (Caption=="classic")
 	{
-	 	for (var i = 0; i <= document.getElementsByClassName("td1").length-1; i++) 
+	 	for (var i = 0; i <= $(".td1").length-1; i++) 
 	 	  {
-			document.getElementsByClassName("td1")
-			[i].style.backgroundColor="black";
+
+			$(".td1")[i].css("background-color","black");
 		  }
-		for (var i = 0; i <= document.getElementsByClassName("td").length-1; i++) 
+		for (var i = 0; i <= $(".td").length-1; i++) 
 	 	  {
-			document.getElementsByClassName("td")
+			$(".td")
 			[i].style.backgroundColor="white";
 		  }
 	}
 	else
 	if (Caption=="color")
 	{
-		for (var i = 0; i <= document.getElementsByClassName("td1").length-1; i++) 
+		for (var i = 0; i <= $(".td1").length-1; i++) 
 	 	  {
-			document.getElementsByClassName("td1")
+			$(".td1")
 			[i].style.backgroundColor=finder1;
 		  }
-		for (var i = 0; i <= document.getElementsByClassName("td").length-1; i++) 
+		for (var i = 0; i <= $(".td").length-1; i++) 
 	 	  {
-			document.getElementsByClassName("td")
+			$(".td")
 			[i].style.backgroundColor=finder;
 		  } 
 	}	  
- 
-}
-function findHex()
-{
-	finder = takeAcolor.value;
-	finder1= takeAcolor1.value;
-	console.log(finder);
-	
-}
+}*/
+
